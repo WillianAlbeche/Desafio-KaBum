@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD8FFD24290B52780057F708 /* Desafio_kabumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD23290B52780057F708 /* Desafio_kabumApp.swift */; };
+		CD8FFD26290B52780057F708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD25290B52780057F708 /* ContentView.swift */; };
+		CD8FFD28290B527A0057F708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8FFD27290B527A0057F708 /* Assets.xcassets */; };
+		CD8FFD2B290B527A0057F708 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8FFD2A290B527A0057F708 /* Preview Assets.xcassets */; };
+		CD8FFD35290B52DC0057F708 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD34290B52DC0057F708 /* ApiService.swift */; };
+		CD8FFD37290B54320057F708 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD36290B54320057F708 /* Product.swift */; };
+		CD8FFD39290B64DF0057F708 /* Fabricante.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD38290B64DF0057F708 /* Fabricante.swift */; };
+		CD8FFD3B290B64E90057F708 /* Oferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD3A290B64E90057F708 /* Oferta.swift */; };
+		CD8FFD3D290C2B530057F708 /* ApiManagerConvencional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD3C290C2B530057F708 /* ApiManagerConvencional.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD8FFD20290B52780057F708 /* Desafio-kabum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-kabum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8FFD23290B52780057F708 /* Desafio_kabumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_kabumApp.swift; sourceTree = "<group>"; };
+		CD8FFD25290B52780057F708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD8FFD27290B527A0057F708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD8FFD2A290B527A0057F708 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD8FFD34290B52DC0057F708 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		CD8FFD36290B54320057F708 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CD8FFD38290B64DF0057F708 /* Fabricante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fabricante.swift; sourceTree = "<group>"; };
+		CD8FFD3A290B64E90057F708 /* Oferta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oferta.swift; sourceTree = "<group>"; };
+		CD8FFD3C290C2B530057F708 /* ApiManagerConvencional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerConvencional.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8FFD1D290B52780057F708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD8FFD17290B52780057F708 = {
+			isa = PBXGroup;
+			children = (
+				CD8FFD22290B52780057F708 /* Desafio-kabum */,
+				CD8FFD21290B52780057F708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8FFD21290B52780057F708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FFD20290B52780057F708 /* Desafio-kabum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8FFD22290B52780057F708 /* Desafio-kabum */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FFD33290B52A40057F708 /* ApiManager */,
+				CD8FFD32290B52980057F708 /* ViewController */,
+				CD8FFD31290B528E0057F708 /* Model */,
+				CD8FFD23290B52780057F708 /* Desafio_kabumApp.swift */,
+				CD8FFD25290B52780057F708 /* ContentView.swift */,
+				CD8FFD27290B527A0057F708 /* Assets.xcassets */,
+				CD8FFD29290B527A0057F708 /* Preview Content */,
+			);
+			path = "Desafio-kabum";
+			sourceTree = "<group>";
+		};
+		CD8FFD29290B527A0057F708 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FFD2A290B527A0057F708 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD8FFD31290B528E0057F708 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FFD36290B54320057F708 /* Product.swift */,
+				CD8FFD38290B64DF0057F708 /* Fabricante.swift */,
+				CD8FFD3A290B64E90057F708 /* Oferta.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD8FFD32290B52980057F708 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD8FFD33290B52A40057F708 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FFD34290B52DC0057F708 /* ApiService.swift */,
+				CD8FFD3C290C2B530057F708 /* ApiManagerConvencional.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8FFD1F290B52780057F708 /* Desafio-kabum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8FFD2E290B527A0057F708 /* Build configuration list for PBXNativeTarget "Desafio-kabum" */;
+			buildPhases = (
+				CD8FFD1C290B52780057F708 /* Sources */,
+				CD8FFD1D290B52780057F708 /* Frameworks */,
+				CD8FFD1E290B52780057F708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desafio-kabum";
+			productName = "Desafio-kabum";
+			productReference = CD8FFD20290B52780057F708 /* Desafio-kabum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD8FFD18290B52780057F708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					CD8FFD1F290B52780057F708 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CD8FFD1B290B52780057F708 /* Build configuration list for PBXProject "Desafio-kabum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD8FFD17290B52780057F708;
+			productRefGroup = CD8FFD21290B52780057F708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8FFD1F290B52780057F708 /* Desafio-kabum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8FFD1E290B52780057F708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8FFD2B290B527A0057F708 /* Preview Assets.xcassets in Resources */,
+				CD8FFD28290B527A0057F708 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD8FFD1C290B52780057F708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8FFD26290B52780057F708 /* ContentView.swift in Sources */,
+				CD8FFD37290B54320057F708 /* Product.swift in Sources */,
+				CD8FFD24290B52780057F708 /* Desafio_kabumApp.swift in Sources */,
+				CD8FFD35290B52DC0057F708 /* ApiService.swift in Sources */,
+				CD8FFD3B290B64E90057F708 /* Oferta.swift in Sources */,
+				CD8FFD39290B64DF0057F708 /* Fabricante.swift in Sources */,
+				CD8FFD3D290C2B530057F708 /* ApiManagerConvencional.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD8FFD2C290B527A0057F708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD8FFD2D290B527A0057F708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8FFD2F290B527A0057F708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Desafio-kabum/Preview Content\"";
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Desafio-kabum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8FFD30290B527A0057F708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Desafio-kabum/Preview Content\"";
+				DEVELOPMENT_TEAM = 76N3ST5C2U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.DeveloperAcademy.Desafio-kabum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD8FFD1B290B52780057F708 /* Build configuration list for PBXProject "Desafio-kabum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8FFD2C290B527A0057F708 /* Debug */,
+				CD8FFD2D290B527A0057F708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8FFD2E290B527A0057F708 /* Build configuration list for PBXNativeTarget "Desafio-kabum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8FFD2F290B527A0057F708 /* Debug */,
+				CD8FFD30290B527A0057F708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD8FFD18290B52780057F708 /* Project object */;
+}
