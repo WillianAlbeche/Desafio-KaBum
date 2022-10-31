@@ -31,7 +31,10 @@ struct Product:Hashable, Codable {
         hasher.combine(nome)
     }
 
-    struct Result: Codable {
-        var produtos:[Product] = []
-    }
+    
+
+
+}
+struct Result: Codable {
+    var produtos:[Product] = []
 }

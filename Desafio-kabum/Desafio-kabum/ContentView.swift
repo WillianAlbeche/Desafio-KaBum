@@ -9,25 +9,8 @@ import SwiftUI
 
 
 struct ContentView: View {
-
-    @StateObject var apiManager = ApiManager()
-    
-
     var body: some View {
-        VStack {
-            List {
-                ForEach(apiManager.products , id: \.self) { product in
-                    Text("olha ai o get da api \(product.nome)")
-
-                }
-            }
-            .task {
-                await api.getDataJson()
-                array = api.products
-                let _ = print(array)
-            }
-        }
-        .padding()
+        Home()
     }
 
 }

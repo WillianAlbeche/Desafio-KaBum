@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD469D80290FEE1000733012 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469D7F290FEE1000733012 /* Home.swift */; };
+		CD469D83290FEE4200733012 /* Carrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469D82290FEE4200733012 /* Carrousel.swift */; };
+		CD469D85290FEE5200733012 /* CardCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469D84290FEE5200733012 /* CardCarrousel.swift */; };
+		CD469D8B290FFB6000733012 /* CardProdutoDestaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469D8A290FFB6000733012 /* CardProdutoDestaque.swift */; };
+		CD469D8D290FFE2800733012 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469D8C290FFE2800733012 /* ImageManager.swift */; };
 		CD8FFD24290B52780057F708 /* Desafio_kabumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD23290B52780057F708 /* Desafio_kabumApp.swift */; };
 		CD8FFD26290B52780057F708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFD25290B52780057F708 /* ContentView.swift */; };
 		CD8FFD28290B527A0057F708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8FFD27290B527A0057F708 /* Assets.xcassets */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD469D7F290FEE1000733012 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CD469D82290FEE4200733012 /* Carrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrousel.swift; sourceTree = "<group>"; };
+		CD469D84290FEE5200733012 /* CardCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCarrousel.swift; sourceTree = "<group>"; };
+		CD469D8A290FFB6000733012 /* CardProdutoDestaque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProdutoDestaque.swift; sourceTree = "<group>"; };
+		CD469D8C290FFE2800733012 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		CD8FFD20290B52780057F708 /* Desafio-kabum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-kabum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8FFD23290B52780057F708 /* Desafio_kabumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_kabumApp.swift; sourceTree = "<group>"; };
 		CD8FFD25290B52780057F708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD469D7E290FEDE700733012 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD469D81290FEE2C00733012 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CD469D84290FEE5200733012 /* CardCarrousel.swift */,
+				CD469D8A290FFB6000733012 /* CardProdutoDestaque.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		CD8FFD17290B52780057F708 = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +87,10 @@
 		CD8FFD22290B52780057F708 /* Desafio-kabum */ = {
 			isa = PBXGroup;
 			children = (
-				CD8FFD33290B52A40057F708 /* ApiManager */,
-				CD8FFD32290B52980057F708 /* ViewController */,
+				CD8FFD33290B52A40057F708 /* Services */,
 				CD8FFD31290B528E0057F708 /* Model */,
+				CD8FFD32290B52980057F708 /* View */,
+				CD469D7E290FEDE700733012 /* Controller */,
 				CD8FFD23290B52780057F708 /* Desafio_kabumApp.swift */,
 				CD8FFD25290B52780057F708 /* ContentView.swift */,
 				CD8FFD27290B527A0057F708 /* Assets.xcassets */,
@@ -90,20 +117,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CD8FFD32290B52980057F708 /* ViewController */ = {
+		CD8FFD32290B52980057F708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD469D81290FEE2C00733012 /* Components */,
+				CD469D7F290FEE1000733012 /* Home.swift */,
+				CD469D82290FEE4200733012 /* Carrousel.swift */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
-		CD8FFD33290B52A40057F708 /* ApiManager */ = {
+		CD8FFD33290B52A40057F708 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				CD8FFD34290B52DC0057F708 /* ApiService.swift */,
 				CD8FFD3C290C2B530057F708 /* ApiManagerConvencional.swift */,
+				CD469D8C290FFE2800733012 /* ImageManager.swift */,
 			);
-			path = ApiManager;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,12 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD469D8B290FFB6000733012 /* CardProdutoDestaque.swift in Sources */,
+				CD469D83290FEE4200733012 /* Carrousel.swift in Sources */,
 				CD8FFD26290B52780057F708 /* ContentView.swift in Sources */,
+				CD469D8D290FFE2800733012 /* ImageManager.swift in Sources */,
 				CD8FFD37290B54320057F708 /* Product.swift in Sources */,
 				CD8FFD24290B52780057F708 /* Desafio_kabumApp.swift in Sources */,
 				CD8FFD35290B52DC0057F708 /* ApiService.swift in Sources */,
 				CD8FFD3B290B64E90057F708 /* Oferta.swift in Sources */,
+				CD469D85290FEE5200733012 /* CardCarrousel.swift in Sources */,
 				CD8FFD39290B64DF0057F708 /* Fabricante.swift in Sources */,
+				CD469D80290FEE1000733012 /* Home.swift in Sources */,
 				CD8FFD3D290C2B530057F708 /* ApiManagerConvencional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
