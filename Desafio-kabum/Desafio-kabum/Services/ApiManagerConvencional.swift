@@ -16,7 +16,6 @@ class ApiManagerConvencional: ObservableObject {
             guard let data = data , error == nil else {
                 return
             }
-            // Convert to JSON
             do {
                 let response = try JSONDecoder().decode(Result.self, from: data)
                 DispatchQueue.main.async {
@@ -24,7 +23,7 @@ class ApiManagerConvencional: ObservableObject {
                 }
 
             } catch {
-                print("tentei e deu: \(error)")
+                print("Found an: \(error)")
             }
         }
         task.resume()

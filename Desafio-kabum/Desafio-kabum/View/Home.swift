@@ -9,19 +9,25 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var apiManager = ApiManagerConvencional()
-
+    //@StateObject var apiManager =  ApiService()
 
     var body: some View {
         VStack {
-            List {
+            ScrollView {
                 ForEach(apiManager.products , id: \.self) { product in
-                    //Text("olha ai o get da api \(product.nome)")
-                    CardProdutoDestaque(imageURL: product.img, nomeProd: product.nome)
+                    CardProdutoDestaque(
+                        imageURL: product.img,
+                        nomeProd: product.nome,
+                        precoProd: product.preco_formatado
+                    )
                 }
+                .padding()
             }
-            .onAppear(){
-                apiManager.fetch()
-            }
+        }
+        .ignoresSafeArea()
+        .background(Color(red: 0.9568627450980393, green: 0.9568627450980393, blue: 1.0))
+        .onAppear(){
+            apiManager.fetch()
         }
         .padding()
     }
