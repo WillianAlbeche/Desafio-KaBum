@@ -27,11 +27,9 @@ struct Home: View {
                     Spacer()
                 }
                 ProdutosDestaque()
-
             }
             .frame( maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("BackgroundColor"))
-            //.navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -52,8 +50,6 @@ struct Home: View {
                         Image(systemName: "cart.fill")
                             .foregroundColor(.white)
                     }
-
-
                 }
             }
             .toolbarBackground(
@@ -61,12 +57,7 @@ struct Home: View {
                 for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
         }
-        //.searchable(text: $searchTerm)
-
     }
-
-    
-
 }
 
 struct Home_Previews: PreviewProvider {

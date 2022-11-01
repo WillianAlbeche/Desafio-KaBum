@@ -11,7 +11,6 @@ struct ProdutosDestaque: View {
     @State var arrayProducts: [Product] = []
     @StateObject var apiManager =  ApiService()
     @State var currentPage = 1
-    @State var lastID = 0
     @State var thresholdIndex: Int = 10
     @State var isLoading: Bool = true
     var body: some View {

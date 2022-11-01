@@ -7,5 +7,5 @@
 
 import Foundation
 struct Oferta: Codable {
-
+    let codigo: Int
 }

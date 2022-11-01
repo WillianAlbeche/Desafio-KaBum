@@ -24,7 +24,6 @@ struct Carrousel: View {
                 }
             }
         }
-
     }
 }
 

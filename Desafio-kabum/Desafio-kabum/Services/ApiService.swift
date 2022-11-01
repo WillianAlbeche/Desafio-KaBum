@@ -12,9 +12,6 @@ class ApiService: ObservableObject {
 
     var app: Int = 1
     var limite: Int = 10
-    //var pagina: Int = 1
-    //var lastId: Int? = nil
-
     func fetch(currentPage: Int) async throws -> [Product] {
 
         guard let url = URL(string: "https://servicespub.prod.api.aws.grupokabum.com.br/home/v1/home/produto?app=\(app)&limite=\(limite)&pagina=\(currentPage)") else { fatalError("Missing URL")
