@@ -19,6 +19,7 @@ struct SectionView: View {
                     .fontWeight(.bold)
             }
             .padding()
+            Spacer()
         }
     }
 }

@@ -7,19 +7,16 @@
 
 import SwiftUI
 
-struct CarrouselImages {
-    var id: Int
-    var imageName:String
-}
+
 struct CardCarrousel: View {
-    @State var nameImage:String = ""
+    @State var imageName:String = ""
     var body: some View {
         Rectangle()
             .foregroundColor(.clear)
             .frame(width: 300, height:200)
             .overlay {
                 ZStack {
-                    Image(nameImage)
+                    Image(imageName)
                         .resizable()
                         .cornerRadius(15)
                 }

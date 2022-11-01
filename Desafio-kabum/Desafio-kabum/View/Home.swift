@@ -13,7 +13,6 @@ struct Home: View {
             ScrollView {
                 Carrousel()
                 SectionView()
-                    Spacer()
                 ProdutosDestaque()
             }
             .frame( maxWidth: .infinity, maxHeight: .infinity)

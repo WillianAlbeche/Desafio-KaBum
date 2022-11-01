@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CardProdutoDestaque: View {
     @State var imageURL: String = ""
-    @State var nomeProd: String = ""
-    @State var precoDescontoProd: String = ""
-    @State var precoProd: String = ""
-    @State var nomeFabricante: String = ""
+    @State var nameProd: String = ""
+    @State var priceDescountProd: String = ""
+    @State var priceProd: String = ""
+    @State var nameManufacturer: String = ""
 
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
@@ -38,19 +38,19 @@ struct CardProdutoDestaque: View {
                         }
                     Spacer()
                     VStack(alignment: .leading) {
-                        Text(nomeFabricante.uppercased())
+                        Text(nameManufacturer.uppercased())
                             .font(.caption)
                             .foregroundColor(.gray)
                             .padding(.top, 10)
-                        Text(nomeProd)
+                        Text(nameProd)
                             .fontWeight(.semibold)
                             .lineLimit(3)
                             .padding(.bottom, 15)
-                        Text(precoDescontoProd)
+                        Text(priceDescountProd)
                             .fontWeight(.bold)
                             .foregroundColor(Color("OrageKabum"))
                             .padding(.top, 5)
-                        Text("\(precoProd) em até 10x")
+                        Text("\(priceProd) em até 10x")
                             .font(.caption)
                             .foregroundColor(.gray)
                     }

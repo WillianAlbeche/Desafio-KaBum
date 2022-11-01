@@ -18,7 +18,7 @@ struct Carrousel: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center) {
                 ForEach(arrayCarrousel, id: \.id) { banner in
-                    CardCarrousel(nameImage: banner.imageName)
+                    CardCarrousel(imageName: banner.imageName)
                         .padding()
 
                 }

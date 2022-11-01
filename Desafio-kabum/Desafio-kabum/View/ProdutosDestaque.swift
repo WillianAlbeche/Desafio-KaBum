@@ -22,10 +22,10 @@ struct ProdutosDestaque: View {
                     ForEach(Array(zip(arrayProducts.indices, arrayProducts)), id: \.0) { (index, product) in
                         CardProdutoDestaque(
                             imageURL: product.img,
-                            nomeProd: product.nome,
-                            precoDescontoProd: product.preco_desconto_formatado,
-                            precoProd: product.preco_formatado,
-                            nomeFabricante: product.fabricante.nome
+                            nameProd: product.nome,
+                            priceDescountProd: product.preco_desconto_formatado,
+                            priceProd: product.preco_formatado,
+                            nameManufacturer: product.fabricante.nome
                         )
                     }
                     if isLoading {
