@@ -20,8 +20,9 @@ struct Product:Hashable, Codable {
     let alt: Int
     let preco: String
     let preco_formatado: String
+    let preco_desconto_formatado: String
     let is_openbox: Bool
-    // let fabricante: Fabricante
+    let fabricante: Fabricante
     let menu: String
     let disponibilidade: Bool
     let offer_id: String
@@ -30,10 +31,6 @@ struct Product:Hashable, Codable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(nome)
     }
-
-    
-
-
 }
 struct Result: Codable {
     var produtos:[Product] = []

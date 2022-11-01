@@ -8,29 +8,65 @@
 import SwiftUI
 
 struct Home: View {
-    @StateObject var apiManager = ApiManagerConvencional()
-    //@StateObject var apiManager =  ApiService()
 
+    @State var searchTerm = ""
     var body: some View {
-        VStack {
+        NavigationView {
             ScrollView {
-                ForEach(apiManager.products , id: \.self) { product in
-                    CardProdutoDestaque(
-                        imageURL: product.img,
-                        nomeProd: product.nome,
-                        precoProd: product.preco_formatado
-                    )
+                Carrousel()
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("PRODUTOS")
+                            .font(.footnote)
+                            .foregroundColor(.blue)
+                        Text("Em destaque")
+                            .font(.title)
+                            .fontWeight(.bold)
+                    }
+                    .padding()
+                    Spacer()
                 }
-                .padding()
+                ProdutosDestaque()
+
             }
+            .frame( maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("BackgroundColor"))
+            //.navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack{
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.white)
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                TextField("Procure no KaBum!", text: $searchTerm)
+                            }
+                            .foregroundColor(.gray)
+                            .padding(.leading, 10)
+                        }
+                        .frame(height: 35)
+                        .cornerRadius(13)
+                        .padding()
+                        Image(systemName: "cart.fill")
+                            .foregroundColor(.white)
+                    }
+
+
+                }
+            }
+            .toolbarBackground(
+                Color("NavigationColor"),
+                for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
         }
-        .ignoresSafeArea()
-        .background(Color(red: 0.9568627450980393, green: 0.9568627450980393, blue: 1.0))
-        .onAppear(){
-            apiManager.fetch()
-        }
-        .padding()
+        //.searchable(text: $searchTerm)
+
     }
+
+    
+
 }
 
 struct Home_Previews: PreviewProvider {

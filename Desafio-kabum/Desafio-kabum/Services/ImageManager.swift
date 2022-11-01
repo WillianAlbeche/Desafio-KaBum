@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 struct ImageManager {
 
+    // MARK: utilizado para transformar uma url em uma imagem( nao precisa mais por causa do AsyncImage
     func loadImage (urlImage: String) -> UIImage {
         var data: Data = Data()
         do {

@@ -13,8 +13,7 @@ struct Carrousel: View {
         CarrouselImages(id: 2, imageName: "KabumBanner2"),
         CarrouselImages(id: 3, imageName: "KabumBanner3")
     ]
-
-
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center) {

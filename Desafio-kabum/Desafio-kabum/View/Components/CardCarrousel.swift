@@ -23,7 +23,6 @@ struct CardCarrousel: View {
                         .resizable()
                         .cornerRadius(15)
                 }
-
             }
     }
 }

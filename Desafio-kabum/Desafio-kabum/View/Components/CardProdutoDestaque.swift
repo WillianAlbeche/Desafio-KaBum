@@ -10,44 +10,56 @@ import SwiftUI
 struct CardProdutoDestaque: View {
     @State var imageURL: String = ""
     @State var nomeProd: String = ""
+    @State var precoDescontoProd: String = ""
     @State var precoProd: String = ""
-    //@State var image: UIImage = UIImage()
+    @State var nomeFabricante: String = ""
+
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
-            .foregroundColor(Color(red: 0.9686274509803922, green: 0.9725490196078431, blue: 0.996078431372549))
-            .frame(width: 375, height: 175)
+            .foregroundColor(Color("CardBackgroundColor"))
+            .frame(width: 375, height: 170)
             .shadow(radius: 1.5, x: 0, y: 0.5)
             .overlay {
                 HStack {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(.white)
-                        .frame(width: 135, height: 135)
+                        .frame(width: 150, height: 150)
                         .shadow(radius: 1.5, x: 0, y: 2)
                         .overlay {
+                            // MARK: forma nova e asincrona de transformar uma url em imagem
                             AsyncImage(url: URL(string: imageURL)) {image in
                                 image
                                       .resizable()
-                                      //.scaledToFit()
+                                      .frame(width: 150, height: 150)
                               } placeholder: {
                                   ProgressView()
                               }
                               .cornerRadius(10)
                         }
-                        .padding()
+                    Spacer()
                     VStack(alignment: .leading) {
+                        Text(nomeFabricante.uppercased())
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                            .padding(.top, 10)
                         Text(nomeProd)
-                            .frame(width: 200, height: 100)
+                            .fontWeight(.semibold)
                             .lineLimit(3)
-                        Text(precoProd)
+                            .padding(.bottom, 15)
+                        Text(precoDescontoProd)
                             .fontWeight(.bold)
-                            .foregroundColor(Color(red: 1.0, green: 0.2980392156862745, blue: 0.0))
+                            .foregroundColor(Color("OrageKabum"))
+                            .padding(.top, 5)
+                        Text("\(precoProd) em até 10x")
+                            .font(.caption)
+                            .foregroundColor(.gray)
                     }
-
+                    .padding(.trailing, 30)
+                    .padding(.bottom, 25)
                 }
-                .padding(.horizontal)
+                .padding(5)
             }
-            .padding()
-
+            .padding(1.5)
     }
 }
 
